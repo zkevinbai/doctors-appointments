@@ -37,14 +37,8 @@ test('displays the appointment list', async () => {
   const requestButton = screen.getByRole('button', { name: 'Request Appointment' });
   fireEvent.click(requestButton);
 
-  // Log the HTML content before waiting
-  console.log("Before waitFor:", screen.container.innerHTML);
-
   // Wait for the appointment list to be updated
   await waitFor(() => {
-    // Log the HTML content after waiting
-    console.log("After waitFor:", screen.container.innerHTML);
-
     // Check if the appointment list contains the requested appointment
     const appointmentListElement = screen.getByText('Appointments');
     expect(appointmentListElement).toBeInTheDocument();
