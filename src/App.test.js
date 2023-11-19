@@ -5,7 +5,7 @@ import App from "./App";
 
 test('renders the main app with the title', () => {
   render(<App />);
-  expect(screen.getByText("Kevin's Pharmaceutical Appointments Tool")).toBeInTheDocument();
+  expect(screen.getByText("Kevin's Doctor Appointments App")).toBeInTheDocument();
 });
 
 test('selects a doctor and requests an appointment', async () => {

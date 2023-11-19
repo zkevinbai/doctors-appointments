@@ -20,7 +20,7 @@ const App = () => {
   return (
     <div>
       <div className='title'>
-        <h1>Kevin's Pharmaceutical Appointments Tool</h1>
+        <h1>Kevin's Doctor Appointments App</h1>
         <a href='https://github.com/zkevinbai/pharmaceutical-appointments' target='_blank' rel='noopener noreferrer'>
           Github Repo
         </a>
