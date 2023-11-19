@@ -1,35 +1,19 @@
-// src/components/AppointmentForm.js
-import React, { useState } from "react";
+// src/components/AppointmentList.js
+import React from "react";
 
-const AppointmentForm = ({ selectedDoctor, onRequestAppointment }) => {
-    const [selectedTime, setSelectedTime] = useState("");
-
-    const handleRequestAppointment = () => {
-        if (selectedTime) {
-            onRequestAppointment({
-                doctor: selectedDoctor.name,
-                time: selectedTime,
-            });
-            setSelectedTime("");
-        }
-    };
-
+const AppointmentList = ({ appointments }) => {
     return (
         <div>
-            <h2>Request Appointment</h2>
-            <p>Selected Doctor: {selectedDoctor.name}</p>
-            <label>Select Time:</label>
-            <select value={selectedTime} onChange={(e) => setSelectedTime(e.target.value)}>
-                <option value="">-- Select Time --</option>
-                {selectedDoctor.availability.map((time) => (
-                    <option key={time} value={time}>
-                        {time}
-                    </option>
+            <h2>Appointments</h2>
+            <ul>
+                {appointments.map((appointment, index) => (
+                    <li key={index}>
+                        <strong>{appointment.doctor}</strong> - {appointment.time}
+                    </li>
                 ))}
-            </select>
-            <button onClick={handleRequestAppointment}>Request Appointment</button>
+            </ul>
         </div>
     );
 };
 
-export default AppointmentForm;
+export default AppointmentList;
