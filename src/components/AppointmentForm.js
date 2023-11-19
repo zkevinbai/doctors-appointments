@@ -19,7 +19,7 @@ const AppointmentForm = ({ selectedDoctor, onRequestAppointment }) => {
             <h2>Request Appointment</h2>
             <p>Selected Doctor: {selectedDoctor.name}</p>
             <label>Select Time:</label>
-            <select value={selectedTime} onChange={(e) => setSelectedTime(e.target.value)}>
+            <select className="timepicker" value={selectedTime} onChange={(e) => setSelectedTime(e.target.value)}>
                 <option value="">-- Select Time --</option>
                 {selectedDoctor.availability.map((time) => (
                     <option key={time} value={time}>
