@@ -1,7 +1,7 @@
 
 # Kevin's Doctor Appointments App
 
-This webapp is designed to allow individuals to request appointments with Doctors. The application allows allow sales reps to select a doctor, see a doctor’s availability, and request a meeting.
+This webapp is designed to allow individuals to request appointments with Doctors. The application allows individuals to select a doctor, see a doctor’s availability, and request a meeting.
 
 This app is built with React and deployed on Github Pages.  It can be easily run or tested with the
 instructions provided below
