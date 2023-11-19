@@ -23,7 +23,7 @@ li:hover {
     align-items: flex-start;
     justify-self: center;
     /* Align content to the top */
-    width: 15rem;
+    /* width: 15rem; */
     /* Set a maximum height if needed, so it scrolls when it exceeds this height */
     overflow-y: auto;
     /* Add vertical scroll when content exceeds the container height */
