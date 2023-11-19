@@ -1,5 +1,6 @@
 // src/App.js
 import React, { useState } from "react";
+import './App.css'
 import DoctorList from "./components/DoctorList";
 import AppointmentForm from "./components/AppointmentForm";
 import AppointmentList from "./components/AppointmentList";
@@ -18,7 +19,12 @@ const App = () => {
 
   return (
     <div>
-      <h1>Pharmaceutical Appointments</h1>
+      <div className='title'>
+        <h1>Kevin's Pharmaceutical Appointments Tool</h1>
+        <a href='https://github.com/zkevinbai/pharmaceutical-appointments' target='_blank' rel='noopener noreferrer'>
+          Github Repo
+        </a>
+      </div>
       <div style={{ display: "flex" }}>
         <div style={{ flex: 1 }}>
           <DoctorList onSelectDoctor={handleSelectDoctor} />

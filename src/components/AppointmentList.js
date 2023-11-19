@@ -3,7 +3,7 @@ import React from "react";
 
 const AppointmentList = ({ appointments }) => {
     return (
-        <div>
+        <div className="appointment-list">
             <h2>Appointments</h2>
             <ul>
                 {appointments.map((appointment, index) => (

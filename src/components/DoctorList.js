@@ -4,7 +4,7 @@ import doctors from "../data/doctors";
 
 const DoctorList = ({ onSelectDoctor }) => {
     return (
-        <div>
+        <div className="doctors-list">
             <h2>Doctors</h2>
             <ul>
                 {doctors.map((doctor) => (

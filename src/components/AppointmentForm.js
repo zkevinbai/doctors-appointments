@@ -15,7 +15,7 @@ const AppointmentForm = ({ selectedDoctor, onRequestAppointment }) => {
     };
 
     return (
-        <div>
+        <div className="appointment-form">
             <h2>Request Appointment</h2>
             <p>Selected Doctor: {selectedDoctor.name}</p>
             <label>Select Time:</label>
