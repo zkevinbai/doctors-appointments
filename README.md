@@ -6,7 +6,9 @@ This webapp is designed to allow individuals to request appointments with Doctor
 This app is built with React and deployed on Github Pages.  It can be easily run or tested with the
 instructions provided below
 
+![Mobile App View](public/screenshot-mobile.png)
 
+![Desktop App View](public/screenshot-desktop.png)
 
 ---
 
