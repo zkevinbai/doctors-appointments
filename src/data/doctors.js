@@ -1,8 +1,8 @@
 // src/data/doctors.js
 const doctors = [
-    { id: 1, name: "Dr. Johnson", availability: ["9:00 AM", "1:00 PM", "3:30 PM"] },
+    { id: 1, name: "Dr. Wei", availability: ["9:00 AM", "1:00 PM", "3:30 PM"] },
     { id: 2, name: "Dr. Rodriguez", availability: ["10:30 AM", "2:30 PM", "4:00 PM"] },
-    { id: 3, name: "Dr. Williams", availability: ["8:00 AM", "12:00 PM", "5:00 PM"] },
+    { id: 3, name: "Dr. Bai", availability: ["8:00 AM", "12:00 PM", "5:00 PM"] },
     { id: 4, name: "Dr. Chen", availability: ["11:00 AM", "3:00 PM", "4:30 PM"] },
     { id: 5, name: "Dr. Patel", availability: ["9:30 AM", "1:30 PM", "3:45 PM"] },
     { id: 6, name: "Dr. Davis", availability: ["8:30 AM", "12:30 PM", "4:15 PM"] },

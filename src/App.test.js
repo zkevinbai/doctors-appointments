@@ -27,7 +27,7 @@ test('displays the appointment list', async () => {
   render(<App />);
 
   // Request an appointment
-  const doctorElement = screen.getByText('Dr. Johnson');
+  const doctorElement = screen.getByText('Dr. Wei');
   fireEvent.click(doctorElement);
 
   const timeSelect = screen.getByLabelText('Select Time:');
